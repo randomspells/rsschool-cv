@@ -2,8 +2,6 @@
 
 I like to play video games and watch anime. And also I have a lovely cat named Brules.
 
-![Me and my cat](https://ibb.co/ZMWhjTy)
-
 Lately, I've been trying to improve my web-dev skills, cause I like to study and explore new stuff. But I'm probably not going to work in some boring company, at least if they don't have free food. I ❤️ pizza. The main reason that has motivated me so far is the opportunity to bring my ideas to life.
 
 📧 randomspells@yandex.ru  
