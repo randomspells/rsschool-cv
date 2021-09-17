@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.js-function {
+  color: purple;
+}
+
+.js-argument {
+  color: orange;
+}
+
+.js-variable {
+  color: mediumaquamarine;
+}
+
+.js-method {
+  color: rgb(107, 180, 156);
+}
