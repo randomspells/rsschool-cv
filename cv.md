@@ -9,7 +9,7 @@ Lately, I've been trying to improve my web-dev skills, cause I like to study and
 
 ## **Skillset**
 
-ENGLISH B2 ◼️ HTML ◼️ CSS ◼️ JS ◼️ GIT ◼️ REACT
+ENGLISH B1 ◼️ HTML ◼️ CSS ◼️ JS ◼️ GIT ◼️ REACT
 
 ## **Pros**
 
