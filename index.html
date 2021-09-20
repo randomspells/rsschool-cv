@@ -5,100 +5,170 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 
 <body>
-  <div class="page-container">
-    <header>
-      <h1 class="main-heading">Hello, I'm Zhenya</h1>
-      <img class="avatar" src="#" alt="Photo of me">
-      <span class="contact">
-        <a href="mailto:randomspells@yandex.ru">randomspells@yandex.ru</a>
-      </span>
-      <span class="contact">
-        <a href="https://t.me/randomspells">Telegram</a>
-      </span>
-    </header>
+  <div class="content">
 
-    <main>
-      <section>
-        <h2>Description</h2>
-        <p class="description">I like to play video games and watch anime.
-          And also I have a lovely cat named Brules.</p>
-        <p class="description">Lately, I've been trying to improve my web-dev skills,
+    <div class="main">
+      <div class="header">
+        <div class="header__section">
+          <div class="avatar">
+            <img class="avatar__img" src="./img/avatar.png" alt="Photo of me" width="400"
+              height="400">
+          </div>
+        </div>
+
+        <div class="header__section">
+          <div class="intro">
+            <h1 class="intro__heading">Hello, I'm Zhenya</h1>
+            <p class="intro__text">I like to play video games and watch anime.
+              And also I have a lovely cat named Brules.</p>
+          </div>
+
+          <div class="contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <i class="fas fa-envelope"></i>
+                <a class="contacts__mail" href="mailto:randomspells@yandex.ru">
+                  randomspells@ya.ru
+                </a>
+              </li>
+              <li class="contacts__item">
+                <i class="fab fa-telegram-plane"></i>
+                <a class="contacts__telegram" href="https://t.me/randomspells">
+                  Telegram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="description">
+        <h2 class="description__heading">Why am I here?</h2>
+        <p class="description__text">Lately, I've been trying to improve my web-dev skills,
           cause I like to study and explore new stuff. But I'm probably not going to
           work in some boring company, at least if they don't have a lot of free food.
           I ❤️ pizza. And also that was a joke. The main reason that has motivated me
           so far it's the opportunity to bring my ideas to life.</p>
-      </section>
+      </div>
 
-      <section>
-        <h2>Skillset</h2>
-        <span class="skill">ENGLISH B1</span>
-        <span class="skill">HTML</span>
-        <span class="skill">CSS</span>
-        <span class="skill">JS</span>
-        <span class="skill">GIT</span>
-        <span class="skill">REACT</span>
-      </section>
-
-      <section>
-        <h2>Pros</h2>
-        <ul class="list pros">
-          <li>Reliable</li>
-          <li>Responsible</li>
-          <li>Remarkable (for triple "Re")</li>
-          <li>Purposeful (had to google it)</li>
-          <li>~90% accurate and focused</li>
-          <li>Ready to improve my skills</li>
-          <li>Independent and stronk</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Cons</h2>
-        <ul class="list cons">
-          <li>Dislike unnesessary criticism</li>
-          <li>Lazy ass sleeping till noon</li>
-          <li>Hate strict rules and restrictions</li>
-          <li>Honest, but not quite smart</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Education</h2>
-        <span class="university">Kamchatka State Technical University</span>
-        <span class="speciality">Software Engineering</span>
-      </section>
-
-      <section>
+      <div class="code">
         <h2>Code</h2>
-        <code class="code">
-          function constructSubmatrix(m, rtd, ctd) {
-            return m
-              .filter((_, i) => {
-                return !rtd.includes(i);
-              })
-              .map((row) => {
-                return row.filter((_, i) => {
-                  return !ctd.includes(i);
-                });
-              });
-          }
-        </code>
-      </section>
+        <pre class="js">
+  <code class="js-function">function</code> <code class="js-argument">constructSubmatrix</code>(<code class="js-argument">m</code>, <code class="js-argument">rtd</code>, <code class="js-argument">ctd</code>) {
+    <code class="js-function">return</code> <code class="js-variable">m</code>
+      .<code class="js-method">filter</code>((<code class="js-argument">_</code>, <code class="js-argument">i</code>) => {
+        <code class="js-function">return</code> !<code class="js-variable">rtd</code>.<code class="js-method">includes</code>(<code class="js-variable">i</code>);
+      })
+      .<code class="js-method">map</code>((<code class="js-variable">row</code>) => {
+        <code class="js-function">return</code> <code class="js-variable">row</code>.<code class="js-method">filter</code>((<code class="js-argument">_</code>, <code class="js-argument">i</code>) => {
+          <code class="js-function">return</code> !<code class="js-variable">ctd</code>.<code class="js-method">includes</code>(<code class="js-variable">i</code>);
+        });
+      });
+  }
+          </pre>
+      </div>
+    </div>
 
-      <footer>
-        <a href="https://rs.school/js/">
-          <img src="./img/rs-logo.svg" alt="RS School Logo" width="50">
-        </a>
-        <a href="https://github.com/randomspells">GitHub</a>
-        <span class="year">2021</span>
-      </footer>
-    </main>
+    <div class="sidebar">
+      <div class="skillset">
+        <h2 class="skillset__heading">Skillset</h2>
+        <ul class="skillset__list">
+          <li class="skillset__item"><i class="fab fa-html5"></i></li>
+          <li class="skillset__item"><i class="fab fa-css3-alt"></i></li>
+          <li class="skillset__item"><i class="fab fa-js-square"></i></li>
+          <li class="skillset__item"><i class="fab fa-git-alt"></i></li>
+          <li class="skillset__item"><i class="fab fa-react"></i></li>
+        </ul>
+
+      </div>
+
+      <div class="pros">
+        <h2 class="pros__heading">Pros</h2>
+        <ul class="pros__list">
+          <li class="pros__item">
+            <i class="fas fa-plus-square"></i>Reliable
+          </li>
+          <li class="pros__item">
+            <i class="fas fa-plus-square"></i>Responsible
+          </li>
+          <li class="pros__item">
+            <i class="fas fa-plus-square"></i>Remarkable (for triple "Re")
+          </li>
+          <li class="pros__item">
+            <i class="fas fa-plus-square"></i>Purposeful (had to google it)
+          </li>
+          <li class="pros__item">
+            <i class="fas fa-plus-square"></i>~90% accurate and focused
+          </li>
+          <li class="pros__item">
+            <i class="fas fa-plus-square"></i>Ready to improve my skills
+          </li>
+          <li class="pros__item">
+            <i class="fas fa-plus-square"></i>Independent and stronk
+          </li>
+        </ul>
+      </div>
+
+      <div class="cons">
+        <h2 class="cons__heading">Cons</h2>
+        <ul class="cons__list">
+          <li class="cons__item">
+            <i class="fas fa-minus-square"></i>Dislike unfair criticism
+          </li>
+          <li class="cons__item">
+            <i class="fas fa-minus-square"></i>Lazy ass sleeping till noon
+          </li>
+          <li class="cons__item">
+            <i class="fas fa-minus-square"></i>Hate exessively strict rules
+          </li>
+          <li class="cons__item">
+            <i class="fas fa-minus-square"></i>Honest, but not quite smart
+          </li>
+        </ul>
+      </div>
+
+      <div class="education">
+        <h2 class="education__heading">Education</h2>
+        <ul class="education__list">
+          <li class="education__item">
+            <i class="fas fa-check-square"></i>Bachelor of Software Engineering
+          </li>
+          <li class="education__item">
+            <i class="fas fa-check-square"></i>English B1
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
+
+  <div class="footer">
+    <div class="rs-school">
+      <a class="rs-school__link" href="https://rs.school/js/">
+        <img src="./img/rs-logo.svg" alt="RS School Logo" width="50">
+      </a>
+    </div>
+
+    <div class="github">
+      <i class="github__link fab fa-github"></i>
+      <a class="github__link" href="https://github.com/randomspells">My GitHub</a>
+    </div>
+
+    <div class="year">
+      <span class="year__text">2021</span>
+    </div>
+
+  </div>
+
+  <script src="https://kit.fontawesome.com/53e50a4d38.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
