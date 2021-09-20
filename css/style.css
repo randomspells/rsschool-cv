@@ -178,6 +178,7 @@ a:hover {
 
 .menu__list {
   position: fixed;
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
