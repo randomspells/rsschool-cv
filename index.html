@@ -14,55 +14,78 @@
 </head>
 
 <body>
-  <div class="content">
+  <div class="page">
+    <nav class="menu">
+      <div id="menu__btn">
 
-    <div class="main">
-      <div class="header">
-        <div class="header__section">
-          <div class="avatar">
-            <img class="avatar__img" src="./img/avatar.png" alt="Photo of me" width="400"
-              height="400">
-          </div>
-        </div>
-
-        <div class="header__section">
-          <div class="intro">
-            <h1 class="intro__heading">Hello, I'm Zhenya</h1>
-            <p class="intro__text">I like to play video games and watch anime.
-              <br>And also I have a lovely cat named Brules (on the photo).</p>
-          </div>
-
-          <div class="contacts">
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <i class="fas fa-envelope"></i>
-                <a class="contacts__mail" href="mailto:randomspells@yandex.ru">
-                  randomspells@ya.ru
-                </a>
-              </li>
-              <li class="contacts__item">
-                <i class="fab fa-telegram-plane"></i>
-                <a class="contacts__telegram" href="https://t.me/randomspells">
-                  Telegram
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <i class="fas fa-times-circle" id="menu__close"></i>
       </div>
 
-      <div class="description">
-        <h2 class="description__heading">Why am I here?</h2>
-        <p class="description__text">Lately, I've been trying to improve my web-dev skills,
-          cause I like to study and explore new stuff. But I'm probably not going to
-          work in some boring company, at least if they don't have a lot of free food.
-          I ❤️ pizza. And also that was a joke. The main reason that has motivated me
-          so far it's the opportunity to bring my ideas to life.</p>
-      </div>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#description">Why</a></li>
+        <li class="menu__item"><a href="#js">Code</a></li>
+        <li class="menu__item"><a href="#skillset">Skillset</a></li>
+        <li class="menu__item"><a href="#pros">Pros</a></li>
+        <li class="menu__item"><a href="#cons">Cons</a></li>
+        <li class="menu__item"><a href="#education">Education</a></li>
+        <li class="menu__item"><a href="#project">Project</a></li>
+      </ul>
+    </nav>
 
-      <div class="js">
-        <h2 class="js__heading">Code</h2>
-        <pre class="js__code">
+    <div class="content">
+      <main class="main">
+        <header class="header">
+          <section class="header__section">
+            <h1 class="header__heading">Zhenya's CV</h1>
+            <figure class="avatar">
+              <img class="avatar__img" src="./img/avatar.png" alt="Photo of me" width="400"
+                height="400">
+              <figcaption class="avatar__caption">Brules</figcaption>
+            </figure>
+          </section>
+
+          <section class="header__section">
+            <div class="intro">
+              <h2 class="intro__heading">Hello, I'm Zhenya</h2>
+              <p class="intro__text">I like to play video games and watch anime.
+                <br>And also I have a lovely cat named Brules (on the photo).
+              </p>
+            </div>
+
+            <div class="contacts">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <i class="fas fa-envelope"></i>
+                  <a class="contacts__mail" href="mailto:randomspells@yandex.ru" target="_blank">
+                    randomspells@ya.ru
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <i class="fab fa-telegram-plane"></i>
+                  <a class="contacts__telegram" href="https://t.me/randomspells" target="_blank">
+                    Telegram
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </header>
+
+        <section id="description">
+          <h2 class="description__heading">Why am I here?</h2>
+          <p class="description__text">Lately, I've been trying to improve my web-dev skills,
+            cause I like to study and explore new stuff. But I'm probably not going to
+            work in some boring company, at least if they don't have a lot of free food.
+            I ❤️ pizza. And also that was a joke. The main reason that has motivated me
+            so far it's the opportunity to bring my ideas to life.</p>
+        </section>
+
+        <section id="js">
+          <h2 class="js__heading">Code</h2>
+          <details class="js__details">
+            <summary class="js__summary">Code is here!</summary>
+
+            <pre class="js__code">
   <code class="js-function">function</code> <code class="js-argument">constructSubmatrix</code>(<code class="js-argument">m</code>, <code class="js-argument">rtd</code>, <code class="js-argument">ctd</code>) {
     <code class="js-function">return</code> <code class="js-variable">m</code>
       .<code class="js-method">filter</code>((<code class="js-argument">_</code>, <code class="js-argument">i</code>) => {
@@ -75,102 +98,114 @@
       });
   }
           </pre>
-      </div>
+          </details>
+        </section>
+
+      </main>
+
+      <aside class="sidebar">
+        <div id="skillset">
+          <h2 class="skillset__heading">Skillset</h2>
+          <ul class="skillset__list">
+            <li class="skillset__item"><i class="fab fa-html5"></i></li>
+            <li class="skillset__item"><i class="fab fa-css3-alt"></i></li>
+            <li class="skillset__item"><i class="fab fa-js-square"></i></li>
+            <li class="skillset__item"><i class="fab fa-git-alt"></i></li>
+            <li class="skillset__item"><i class="fab fa-react"></i></li>
+          </ul>
+
+        </div>
+
+        <section id="pros">
+          <h2 class="pros__heading">Pros</h2>
+          <ul class="pros__list">
+            <li class="pros__item">
+              <i class="fas fa-plus-square"></i>Reliable
+            </li>
+            <li class="pros__item">
+              <i class="fas fa-plus-square"></i>Responsible
+            </li>
+            <li class="pros__item">
+              <i class="fas fa-plus-square"></i>Remarkable (for triple "Re")
+            </li>
+            <li class="pros__item">
+              <i class="fas fa-plus-square"></i>Purposeful (had to google it)
+            </li>
+            <li class="pros__item">
+              <i class="fas fa-plus-square"></i>~90% accurate and focused
+            </li>
+            <li class="pros__item">
+              <i class="fas fa-plus-square"></i>Ready to improve my skills
+            </li>
+            <li class="pros__item">
+              <i class="fas fa-plus-square"></i>Independent and stronk
+            </li>
+          </ul>
+        </section>
+
+        <section id="cons">
+          <h2 class="cons__heading">Cons</h2>
+          <ul class="cons__list">
+            <li class="cons__item">
+              <i class="fas fa-minus-square"></i>Dislike unfair criticism
+            </li>
+            <li class="cons__item">
+              <i class="fas fa-minus-square"></i>Lazy ass sleeping till noon
+            </li>
+            <li class="cons__item">
+              <i class="fas fa-minus-square"></i>Hate exessively strict rules
+            </li>
+            <li class="cons__item">
+              <i class="fas fa-minus-square"></i>Honest, but not quite smart
+            </li>
+          </ul>
+        </section>
+
+        <section id="education">
+          <h2 class="education__heading">Education</h2>
+          <ul class="education__list">
+            <li class="education__item">
+              <i class="fas fa-check-square"></i>Bachelor of Software Engineering
+            </li>
+            <li class="education__item">
+              <i class="fas fa-check-square"></i>English B1
+            </li>
+          </ul>
+        </section>
+
+        <section id="project">
+          <h2 class="project__heading">Small project</h2>
+          <figure>
+            <div class="project__img"></div>
+            <figcaption class="project__caption">
+              <a class="project__link" href="https://junetvsearch.netlify.app" target="_blank">TV
+                Show Search App</a>
+            </figcaption>
+          </figure>
+        </section>
+      </aside>
     </div>
 
-    <div class="sidebar">
-      <div class="skillset">
-        <h2 class="skillset__heading">Skillset</h2>
-        <ul class="skillset__list">
-          <li class="skillset__item"><i class="fab fa-html5"></i></li>
-          <li class="skillset__item"><i class="fab fa-css3-alt"></i></li>
-          <li class="skillset__item"><i class="fab fa-js-square"></i></li>
-          <li class="skillset__item"><i class="fab fa-git-alt"></i></li>
-          <li class="skillset__item"><i class="fab fa-react"></i></li>
-        </ul>
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__rs-school" href="https://rs.school/js/">
+            <img src="./img/rs-logo.svg" alt="RS School Logo" width="50">
+          </a>
+        </li>
+        <li class="footer__item">
+          <i class="fab fa-github"></i>
+          <a class="footer__github" href="https://github.com/randomspells" target="_blank">My
+            GitHub</a>
+        </li>
 
-      </div>
-
-      <div class="pros">
-        <h2 class="pros__heading">Pros</h2>
-        <ul class="pros__list">
-          <li class="pros__item">
-            <i class="fas fa-plus-square"></i>Reliable
-          </li>
-          <li class="pros__item">
-            <i class="fas fa-plus-square"></i>Responsible
-          </li>
-          <li class="pros__item">
-            <i class="fas fa-plus-square"></i>Remarkable (for triple "Re")
-          </li>
-          <li class="pros__item">
-            <i class="fas fa-plus-square"></i>Purposeful (had to google it)
-          </li>
-          <li class="pros__item">
-            <i class="fas fa-plus-square"></i>~90% accurate and focused
-          </li>
-          <li class="pros__item">
-            <i class="fas fa-plus-square"></i>Ready to improve my skills
-          </li>
-          <li class="pros__item">
-            <i class="fas fa-plus-square"></i>Independent and stronk
-          </li>
-        </ul>
-      </div>
-
-      <div class="cons">
-        <h2 class="cons__heading">Cons</h2>
-        <ul class="cons__list">
-          <li class="cons__item">
-            <i class="fas fa-minus-square"></i>Dislike unfair criticism
-          </li>
-          <li class="cons__item">
-            <i class="fas fa-minus-square"></i>Lazy ass sleeping till noon
-          </li>
-          <li class="cons__item">
-            <i class="fas fa-minus-square"></i>Hate exessively strict rules
-          </li>
-          <li class="cons__item">
-            <i class="fas fa-minus-square"></i>Honest, but not quite smart
-          </li>
-        </ul>
-      </div>
-
-      <div class="education">
-        <h2 class="education__heading">Education</h2>
-        <ul class="education__list">
-          <li class="education__item">
-            <i class="fas fa-check-square"></i>Bachelor of Software Engineering
-          </li>
-          <li class="education__item">
-            <i class="fas fa-check-square"></i>English B1
-          </li>
-        </ul>
-      </div>
-    </div>
+        <li class="footer__item">
+          <time class="footer__year">2021</time>
+        </li>
+      </ul>
+    </footer>
   </div>
-
-  <div class="footer">
-    <ul class="footer__list">
-      <li class="footer__item">
-        <a class="footer__rs-school" href="https://rs.school/js/">
-          <img src="./img/rs-logo.svg" alt="RS School Logo" width="50">
-        </a>
-      </li>
-      <li class="footer__item">
-        <i class="fab fa-github"></i>
-        <a class="footer__github" href="https://github.com/randomspells">My GitHub</a>
-      </li>
-
-      <li class="footer__item">
-        <span class="footer__year">2021</span>
-      </li>
-    </ul>
-
-
-
-  </div>
-
+  <script src="/script/burger.js"></script>
   <script src="https://kit.fontawesome.com/53e50a4d38.js" crossorigin="anonymous"></script>
 </body>
 
